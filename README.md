@@ -1,1 +1,1 @@
-# terraform-templated-ha-webserver-multiaz
+# terraform-templates-ha-webserver-multiaz
