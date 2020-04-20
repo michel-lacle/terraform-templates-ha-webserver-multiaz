@@ -1,5 +1,5 @@
 resource "aws_lb" "multi-instance-lb" {
-  name               = "${var.project}-lb"
+  name               = "multi-instance-lb"
   internal           = false
   load_balancer_type = "application"
   security_groups    = ["${aws_security_group.ec2-sg-web.id}"]
