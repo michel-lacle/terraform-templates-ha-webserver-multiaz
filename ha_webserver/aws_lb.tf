@@ -1,9 +1,9 @@
-resource "aws_lb" "test" {
+resource "aws_lb" "multi-instance-lb" {
   name               = "${var.project}-lb"
   internal           = false
   load_balancer_type = "application"
   security_groups    = ["${aws_security_group.ec2-sg-web.id}"]
-  subnets            = ["${aws_subnet.template-public.*.id}"]
+  subnets            = ["${aws_subnet.template-public.id}"]
 
   enable_deletion_protection = false
 
