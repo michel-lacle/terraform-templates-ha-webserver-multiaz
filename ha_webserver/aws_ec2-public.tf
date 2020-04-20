@@ -12,7 +12,7 @@ resource "aws_instance" "public-ec2-webserver" {
   user_data = file(var.user_data_1)
 
   vpc_security_group_ids = [
-    aws_security_group.ec2-sg-webserver-2.id]
+    aws_security_group.ec2-sg-web.id]
 
   subnet_id = aws_subnet.template-public.id
 
