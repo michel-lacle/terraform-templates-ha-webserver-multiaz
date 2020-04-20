@@ -24,7 +24,7 @@ resource "aws_lb_target_group_attachment" "instance-1-tg-attach" {
 
 resource "aws_lb_target_group_attachment" "instance-1-tg-attach" {
   target_group_arn = aws_lb_target_group.multi-instance_tg.arn
-  target_id        =
+  target_id        = aws_instance.public-ec2-webserver-2.id
   aws_instance.public-ec2-webserver-2.id
   port             = 80
 }
