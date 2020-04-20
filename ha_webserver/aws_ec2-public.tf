@@ -44,7 +44,7 @@ resource "aws_instance" "public-ec2-webserver" {
   # name.
   #key_name = "terraform-templates-vpc"
 
-  user_data = file(var.user_data)
+  user_data = file(var.user_data_1)
 
   vpc_security_group_ids = [
     aws_security_group.ec2-sg-webserver-2.id]

@@ -4,7 +4,12 @@ variable "availability_zones" {
   description = "the availability zone names for the region"
 }
 
-variable "user_data" {
+variable "user_data_1" {
+  type = string
+  description = "path to the user_data file to use to configure EC2"
+}
+
+variable "user_data_2" {
   type = string
   description = "path to the user_data file to use to configure EC2"
 }
